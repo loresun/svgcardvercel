@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="900" height="1200" fill="#F8FAFC"/>
+    
+    <!-- 标题 -->
+    <text x="450" y="100" font-family="Arial" font-size="48" fill="#1E293B" text-anchor="middle" font-weight="bold">循环流程</text>
+    
+    <!-- 步骤1 -->
+    <circle cx="450" cy="300" r="60" fill="#60A5FA"/>
+    <text x="450" y="310" font-family="Arial" font-size="32" fill="white" text-anchor="middle">1</text>
+    <text x="450" y="400" font-family="Arial" font-size="24" fill="#1E293B" text-anchor="middle">计划</text>
+    
+    <!-- 步骤2 -->
+    <circle cx="650" cy="500" r="60" fill="#3B82F6"/>
+    <text x="650" y="510" font-family="Arial" font-size="32" fill="white" text-anchor="middle">2</text>
+    <text x="650" y="600" font-family="Arial" font-size="24" fill="#1E293B" text-anchor="middle">执行</text>
+    
+    <!-- 步骤3 -->
+    <circle cx="450" cy="700" r="60" fill="#2563EB"/>
+    <text x="450" y="710" font-family="Arial" font-size="32" fill="white" text-anchor="middle">3</text>
+    <text x="450" y="800" font-family="Arial" font-size="24" fill="#1E293B" text-anchor="middle">检查</text>
+    
+    <!-- 步骤4 -->
+    <circle cx="250" cy="500" r="60" fill="#1D4ED8"/>
+    <text x="250" y="510" font-family="Arial" font-size="32" fill="white" text-anchor="middle">4</text>
+    <text x="250" y="600" font-family="Arial" font-size="24" fill="#1E293B" text-anchor="middle">改进</text>
+    
+    <!-- 连接线和箭头 -->
+    <path d="M 500 270 Q 650 270 680 450" stroke="#60A5FA" stroke-width="4" marker-end="url(#arrowhead)"/>
+    <path d="M 680 550 Q 650 730 500 730" stroke="#60A5FA" stroke-width="4" marker-end="url(#arrowhead)"/>
+    <path d="M 400 730 Q 250 730 220 550" stroke="#60A5FA" stroke-width="4" marker-end="url(#arrowhead)"/>
+    <path d="M 220 450 Q 250 270 400 270" stroke="#60A5FA" stroke-width="4" marker-end="url(#arrowhead)"/>
+    
+    <!-- 箭头标记定义 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#60A5FA"/>
+        </marker>
+    </defs>
+    
+    <!-- 说明文本 -->
+    <text x="450" y="900" font-family="Arial" font-size="24" fill="#64748B" text-anchor="middle">PDCA循环流程图</text>
+    <text x="450" y="940" font-family="Arial" font-size="20" fill="#64748B" text-anchor="middle">展示持续改进的循环过程</text>
+</svg>

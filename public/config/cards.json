@@ -1,0 +1,211 @@
+{
+    "groups": [
+        {
+            "id": "all",
+            "name": "全部",
+            "pattern": ".*"
+        },
+        {
+            "id": "media",
+            "name": "Media",
+            "pattern": "^media.*"
+        },
+        {
+            "id": "financial",
+            "name": "Financial",
+            "pattern": "^financial.*"
+        },
+        {
+            "id": "demo",
+            "name": "演示流程图",
+            "pattern": "^demo.*"
+        },
+        {
+            "id": "think",
+            "name": "思维工具",
+            "pattern": "^thinking.*"
+        },
+        {
+            "id": "others",
+            "name": "其他",
+            "pattern": "^(?!media|financial|demo|thinking).*"
+        }
+    ],
+    "cards": [
+        {
+            "id": "atm_card",
+            "name": "ATM 卡片",
+            "path": "/svg/atm_card.svg"
+        },
+        {
+            "id": "chinese_explanation",
+            "name": "中文解释",
+            "path": "/svg/chinese-explanation.svg"
+        },
+        {
+            "id": "core_beliefs",
+            "name": "核心信念",
+            "path": "/svg/core-beliefs.svg"
+        },
+        {
+            "id": "demo_ad_flow",
+            "name": "广告流程",
+            "path": "/svg/demo-ad-flow.svg"
+        },
+        {
+            "id": "demo_cycle_flow",
+            "name": "循环流程",
+            "path": "/svg/demo-cycle-flow.svg"
+        },
+        {
+            "id": "demo_process_flow",
+            "name": "处理流程",
+            "path": "/svg/demo-process-flow.svg"
+        },
+        {
+            "id": "design_principles",
+            "name": "设计原则",
+            "path": "/svg/design-principles.svg"
+        },
+        {
+            "id": "enhanced_logical_cards_1",
+            "name": "增强逻辑卡片 1",
+            "path": "/svg/enhanced-logical-cards-1.svg"
+        },
+        {
+            "id": "enhanced_logical_cards_2",
+            "name": "增强逻辑卡片 2",
+            "path": "/svg/enhanced-logical-cards-2.svg"
+        },
+        {
+            "id": "financial_card",
+            "name": "金融卡片",
+            "path": "/svg/financial-card.svg"
+        },
+        {
+            "id": "financial_dashboard",
+            "name": "金融仪表盘",
+            "path": "/svg/financial-dashboard.svg"
+        },
+        {
+            "id": "impossible_triangle",
+            "name": "不可能三角",
+            "path": "/svg/impossible-triangle.svg"
+        },
+        {
+            "id": "ip_growth_curve",
+            "name": "IP 增长曲线",
+            "path": "/svg/ip-growth-curve.svg"
+        },
+        {
+            "id": "logical_thinking_cards",
+            "name": "逻辑思维卡片",
+            "path": "/svg/logical-thinking-cards.svg"
+        },
+        {
+            "id": "logical_thinking_cards_2",
+            "name": "逻辑思维卡片 2",
+            "path": "/svg/logical-thinking-cards-2.svg"
+        },
+        {
+            "id": "logical_thinking_cards_3",
+            "name": "逻辑思维卡片 3",
+            "path": "/svg/logical-thinking-cards-3.svg"
+        },
+        {
+            "id": "logical_thinking_cards_4",
+            "name": "逻辑思维卡片 4",
+            "path": "/svg/logical-thinking-cards-4.svg"
+        },
+        {
+            "id": "media_guide_1",
+            "name": "媒体指南 1",
+            "path": "/svg/media-guide-1.svg"
+        },
+        {
+            "id": "media_guide_2",
+            "name": "媒体指南 2",
+            "path": "/svg/media-guide-2.svg"
+        },
+        {
+            "id": "media_guide_3",
+            "name": "媒体指南 3",
+            "path": "/svg/media-guide-3.svg"
+        },
+        {
+            "id": "media_guide_4",
+            "name": "媒体指南 4",
+            "path": "/svg/media-guide-4.svg"
+        },
+        {
+            "id": "media_guide_5",
+            "name": "媒体指南 5",
+            "path": "/svg/media-guide-5.svg"
+        },
+        {
+            "id": "memo_card",
+            "name": "备忘卡片",
+            "path": "/svg/memo-card.svg"
+        },
+        {
+            "id": "memo_card_1",
+            "name": "备忘卡片 1",
+            "path": "/svg/memo-card 1.svg"
+        },
+        {
+            "id": "output",
+            "name": "输出",
+            "path": "/svg/output.svg"
+        },
+        {
+            "id": "personal_card",
+            "name": "个人卡片",
+            "path": "/svg/personal-card.svg"
+        },
+        {
+            "id": "resume_template",
+            "name": "简历模板",
+            "path": "/svg/resume-template.svg"
+        },
+        {
+            "id": "thinking_5w1h",
+            "name": "5W1H 思维",
+            "path": "/svg/thinking-5w1h.svg"
+        },
+        {
+            "id": "thinking_modes",
+            "name": "思维模式",
+            "path": "/svg/thinking-modes.svg"
+        },
+        {
+            "id": "thinking_pdca",
+            "name": "PDCA 思维",
+            "path": "/svg/thinking-pdca.svg"
+        },
+        {
+            "id": "thinking_pest",
+            "name": "PEST 分析",
+            "path": "/svg/thinking-pest.svg"
+        },
+        {
+            "id": "thinking_smart",
+            "name": "SMART 原则",
+            "path": "/svg/thinking-smart.svg"
+        },
+        {
+            "id": "thinking_swot",
+            "name": "SWOT 分析",
+            "path": "/svg/thinking-swot.svg"
+        },
+        {
+            "id": "visualization_principles",
+            "name": "可视化原则",
+            "path": "/svg/visualization-principles.svg"
+        },
+        {
+            "id": "yuan_character",
+            "name": "元字符",
+            "path": "/svg/yuan-character.svg"
+        }
+    ]
+}

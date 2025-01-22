@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <!-- 背景 -->
+  <rect width="1200" height="900" fill="#f5f5f5"/>
+  
+  <!-- 标题 -->
+  <text x="600" y="80" font-size="48" text-anchor="middle" font-family="Arial" fill="#333">分析思维</text>
+  
+  <!-- 拆解图示 -->
+  <g transform="translate(200,150)">
+    <!-- 大方块 -->
+    <rect x="250" y="100" width="300" height="300" fill="#4C6EF5" opacity="0.3"/>
+    
+    <!-- 拆分的小方块 -->
+    <rect x="270" y="120" width="120" height="120" fill="#4C6EF5"/>
+    <rect x="410" y="120" width="120" height="120" fill="#91A7FF"/>
+    <rect x="270" y="260" width="120" height="120" fill="#91A7FF"/>
+    <rect x="410" y="260" width="120" height="120" fill="#4C6EF5"/>
+    
+    <!-- 分析线 -->
+    <line x1="400" y1="100" x2="400" y2="400" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="250" y1="250" x2="550" y2="250" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+  </g>
+  
+  <!-- 说明文字 -->
+  <text x="600" y="600" font-size="32" text-anchor="middle" font-family="Arial" fill="#666">
+    将复杂问题分解为简单部分
+  </text>
+</svg>

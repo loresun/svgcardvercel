@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font: bold 24px sans-serif; fill: #333; }
+        .subtitle { font: bold 18px sans-serif; fill: #444; }
+        .description { font: 14px sans-serif; fill: #666; }
+        .element { fill: none; stroke-width: 2; }
+        .connector { stroke: #ddd; stroke-width: 2; }
+    </style>
+    
+    <!-- 标题 -->
+    <text x="400" y="50" text-anchor="middle" class="title">SMART 目标设定原则</text>
+    
+    <!-- 中心圆 -->
+    <circle cx="400" cy="300" r="60" fill="#fff" stroke="#ddd" stroke-width="2"/>
+    <text x="400" y="295" text-anchor="middle" class="subtitle">SMART</text>
+    <text x="400" y="315" text-anchor="middle" class="description">目标设定</text>
+    
+    <!-- Specific 具体 -->
+    <path d="M400,240 L400,140" class="connector"/>
+    <circle cx="400" cy="120" r="40" class="element" stroke="#4F46E5" fill="#E3F2FD"/>
+    <text x="400" y="115" text-anchor="middle" class="subtitle">具体的</text>
+    <text x="400" y="135" text-anchor="middle" class="description">Specific</text>
+    
+    <!-- Measurable 可衡量 -->
+    <path d="M450,270 L580,200" class="connector"/>
+    <circle cx="600" cy="180" r="40" class="element" stroke="#10B981" fill="#E8F5E9"/>
+    <text x="600" y="175" text-anchor="middle" class="subtitle">可衡量</text>
+    <text x="600" y="195" text-anchor="middle" class="description">Measurable</text>
+    
+    <!-- Achievable 可实现 -->
+    <path d="M450,330 L580,400" class="connector"/>
+    <circle cx="600" cy="420" r="40" class="element" stroke="#F59E0B" fill="#FFF3E0"/>
+    <text x="600" y="415" text-anchor="middle" class="subtitle">可实现</text>
+    <text x="600" y="435" text-anchor="middle" class="description">Achievable</text>
+    
+    <!-- Relevant 相关性 -->
+    <path d="M350,330 L220,400" class="connector"/>
+    <circle cx="200" cy="420" r="40" class="element" stroke="#EC4899" fill="#FCE7F3"/>
+    <text x="200" y="415" text-anchor="middle" class="subtitle">相关性</text>
+    <text x="200" y="435" text-anchor="middle" class="description">Relevant</text>
+    
+    <!-- Time-bound 时限性 -->
+    <path d="M350,270 L220,200" class="connector"/>
+    <circle cx="200" cy="180" r="40" class="element" stroke="#6366F1" fill="#EEF2FF"/>
+    <text x="200" y="175" text-anchor="middle" class="subtitle">时限性</text>
+    <text x="200" y="195" text-anchor="middle" class="description">Time-bound</text>
+</svg>

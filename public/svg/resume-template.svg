@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="210mm" height="297mm" viewBox="0 0 210 297" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&amp;display=swap');
+            text { font-family: 'Noto Sans SC', sans-serif; }
+            .section-title { font-size: 5mm; font-weight: 700; fill: #0ea5e9; }
+            .info-text { font-size: 3.8mm; fill: #333; }
+            .skill-label { font-size: 3.5mm; fill: #666; }
+            .experience-title { font-size: 4.2mm; font-weight: 500; fill: #333; }
+            .experience-subtitle { font-size: 3.8mm; fill: #666; }
+            .experience-content { font-size: 3.8mm; fill: #444; }
+        </style>
+    </defs>
+    
+    <!-- 背景 -->
+    <rect width="210" height="297" fill="#ffffff"/>
+    
+    <!-- 左侧栏 -->
+    <rect x="0" y="0" width="70" height="297" fill="#f0f9ff"/>
+    
+    <!-- 头像区域 -->
+    <circle cx="35" cy="35" r="22" fill="#0ea5e9"/>
+    <text x="35" y="80" text-anchor="middle" class="info-text" style="font-weight: 700; font-size: 6.5mm;">熊猫</text>
+    <text x="35" y="90" text-anchor="middle" class="info-text" style="font-size: 3.5mm;">教师/讲师</text>
+    
+    <!-- 基本信息 -->
+    <text x="12" y="110" class="section-title">基本信息</text>
+    <text x="12" y="125" class="info-text">年龄：28岁</text>
+    <text x="12" y="137" class="info-text">性别：女</text>
+    <text x="12" y="149" class="info-text">籍贯：广东省广州市</text>
+    <text x="12" y="161" class="info-text">婚姻：未婚</text>
+    
+    <!-- 联系方式 -->
+    <text x="12" y="180" class="section-title">联系方式</text>
+    <text x="12" y="195" class="info-text">手机：012345678</text>
+    <text x="12" y="207" class="info-text">邮箱：xiaoxiongmao@mail.com</text>
+    <text x="12" y="219" class="info-text">QQ：123456789</text>
+    <text x="12" y="231" class="info-text">微信：11111</text>
+    
+    <!-- 技能评估 -->
+    <text x="12" y="250" class="section-title">技能能力</text>
+    
+    <!-- 技能条 -->
+    <g transform="translate(10, 235)">
+        <text y="0" class="skill-label">专业能力</text>
+        <rect x="0" y="3" width="45" height="3" fill="#e2e8f0"/>
+        <rect x="0" y="3" width="40" height="3" fill="#0ea5e9"/>
+        
+        <text y="15" class="skill-label">适应能力</text>
+        <rect x="0" y="18" width="45" height="3" fill="#e2e8f0"/>
+        <rect x="0" y="18" width="38" height="3" fill="#0ea5e9"/>
+        
+        <text y="30" class="skill-label">学习能力</text>
+        <rect x="0" y="33" width="45" height="3" fill="#e2e8f0"/>
+        <rect x="0" y="33" width="42" height="3" fill="#0ea5e9"/>
+        
+        <text y="45" class="skill-label">领导能力</text>
+        <rect x="0" y="48" width="45" height="3" fill="#e2e8f0"/>
+        <rect x="0" y="48" width="35" height="3" fill="#0ea5e9"/>
+        
+        <text y="60" class="skill-label">组织能力</text>
+        <rect x="0" y="63" width="45" height="3" fill="#e2e8f0"/>
+        <rect x="0" y="63" width="37" height="3" fill="#0ea5e9"/>
+        
+        <text y="75" class="skill-label">沟通能力</text>
+        <rect x="0" y="78" width="45" height="3" fill="#e2e8f0"/>
+        <rect x="0" y="78" width="39" height="3" fill="#0ea5e9"/>
+    </g>
+    
+    <!-- 右侧内容 -->
+    <!-- 工作经历 -->
+    <text x="80" y="30" class="section-title">工作经历</text>
+    
+    <g transform="translate(80, 50)">
+        <text class="experience-title">上海熊猫大学</text>
+        <text x="0" y="10" class="experience-subtitle">2016.05-2015.06 | 语文老师</text>
+        <text x="0" y="25" class="experience-content">• 按照教学大纲要求，认真进行教学，努力教学，指导学生。</text>
+        <text x="0" y="40" class="experience-content">• 重视教学效果，认真总结经验，不断改进教学方法，努力提高教学水平。</text>
+        
+        <text x="0" y="65" class="experience-title">上海熊猫大学</text>
+        <text x="0" y="75" class="experience-subtitle">2015.03-2014.09 | 语文老师</text>
+        <text x="0" y="90" class="experience-content">• 按照教学大纲要求，认真进行教学，努力教学，指导学生。</text>
+        <text x="0" y="105" class="experience-content">• 重视教学效果，认真总结经验，不断改进教学方法，努力提高教学水平。</text>
+        
+        <text x="0" y="130" class="experience-title">上海熊猫大学</text>
+        <text x="0" y="140" class="experience-subtitle">2014.01-2013.10 | 语文老师</text>
+        <text x="0" y="155" class="experience-content">• 按照教学大纲要求，认真进行教学，努力教学，指导学生。</text>
+        <text x="0" y="170" class="experience-content">• 重视教学效果，认真总结经验，不断改进教学方法，努力提高教学水平。</text>
+    </g>
+    
+    <!-- 教育背景 -->
+    <text x="80" y="250" class="section-title">教育背景</text>
+    
+    <g transform="translate(80, 270)">
+        <text class="experience-title">上海熊猫大学</text>
+        <text x="0" y="10" class="experience-subtitle">2011.9-2015.6 | 文科硕士</text>
+        
+        <text x="0" y="35" class="experience-title">上海熊猫大学</text>
+        <text x="0" y="45" class="experience-subtitle">2008.9-2011.6 | 文科本科</text>
+        
+        <text x="0" y="70" class="experience-title">上海熊猫大学</text>
+        <text x="0" y="80" class="experience-subtitle">2005.9-2008.6 | 文科高中</text>
+    </g>
+    
+    <!-- 获得荣誉 -->
+    <text x="80" y="370" class="section-title">获得荣誉</text>
+    
+    <g transform="translate(80, 385)">
+        <text class="experience-content">• 计算机二级、教师资格证</text>
+        <text x="0" y="15" class="experience-content">• 人力资源证书</text>
+        <text x="0" y="30" class="experience-content">• 教师从业证书</text>
+        <text x="0" y="45" class="experience-content">• 国家一等学金</text>
+        <text x="0" y="60" class="experience-content">• 英语四级证书</text>
+        <text x="0" y="75" class="experience-content">• 英语六级证书</text>
+    </g>
+</svg>

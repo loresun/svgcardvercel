@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480" height="760" viewBox="0 0 480 760" xmlns="http://www.w3.org/2000/svg">
+    <!-- 外边框 -->
+    <rect x="30" y="30" width="420" height="700" fill="none" stroke="#333" stroke-width="2"/>
+    
+    <!-- 标题区域 -->
+    <text x="240" y="80" font-family="KingHwa_OldSong, serif" font-size="24" text-anchor="middle" fill="#1a1a1a">核心理念</text>
+    
+    <!-- 分隔线 -->
+    <line x1="60" y1="100" x2="420" y2="100" stroke="#333" stroke-width="1"/>
+    
+    <!-- 内容区域 -->
+    <g transform="translate(60, 150)">
+        <!-- 技能 -->
+        <text font-family="KingHwa_OldSong, serif" font-size="20" fill="#333">
+            <tspan x="0" y="0">技能 Skills</tspan>
+        </text>
+        <text font-family="KingHwa_OldSong, serif" font-size="16" fill="#666">
+            <tspan x="20" y="40">• Create - 创造性思维</tspan>
+            <tspan x="20" y="70">• Optimize - 持续优化</tspan>
+            <tspan x="20" y="100">• Structure - 结构化设计</tspan>
+            <tspan x="20" y="130">• Design - 视觉呈现</tspan>
+        </text>
+        
+        <!-- 信念 -->
+        <text font-family="KingHwa_OldSong, serif" font-size="20" fill="#333">
+            <tspan x="0" y="200">信念 Beliefs</tspan>
+        </text>
+        <text font-family="KingHwa_OldSong, serif" font-size="16" fill="#666">
+            <tspan x="20" y="240">清晰的可视化赋能理解</tspan>
+            <tspan x="20" y="270">Clarity empowers understanding</tspan>
+            <tspan x="20" y="300">through visualization</tspan>
+        </text>
+        
+        <!-- 呈现 -->
+        <text font-family="KingHwa_OldSong, serif" font-size="20" fill="#333">
+            <tspan x="0" y="370">呈现 Presentation</tspan>
+        </text>
+        <text font-family="KingHwa_OldSong, serif" font-size="16" fill="#666">
+            <tspan x="20" y="410">以优雅精准的视觉语言</tspan>
+            <tspan x="20" y="440">传达设计理念</tspan>
+        </text>
+    </g>
+    
+    <!-- 装饰元素 -->
+    <path d="M60 500 L420 500" stroke="#ddd" stroke-width="1" stroke-dasharray="4 4"/>
+    
+    <!-- 底部签名 -->
+    <text x="240" y="700" font-family="KingHwa_OldSong, serif" font-size="14" text-anchor="middle" fill="#666">Prompty by 李继刚</text>
+</svg>

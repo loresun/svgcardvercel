@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="400" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="300" height="400" rx="20" fill="#fdf2f8"/>
+    
+    <!-- 标题文字 -->
+    <text x="50" y="100" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333">
+        <tspan x="50" dy="0">新手小白</tspan>
+        <tspan x="50" dy="45">如何做自媒体</tspan>
+    </text>
+    
+    <!-- 装饰元素 -->
+    <circle cx="240" cy="80" r="30" fill="#ec4899" opacity="0.2"/>
+    <circle cx="260" cy="100" r="15" fill="#ec4899" opacity="0.3"/>
+    
+    <!-- 社交媒体图标组 -->
+    <g transform="translate(80,180)">
+        <!-- 对话框图标 -->
+        <path d="M0,0 L120,0 L120,80 L80,80 L60,100 L40,80 L0,80 Z" fill="none" stroke="#ec4899" stroke-width="3"/>
+        
+        <!-- 互动图标 -->
+        <circle cx="30" cy="40" r="10" fill="#ec4899" opacity="0.3"/>
+        <circle cx="60" cy="40" r="10" fill="#ec4899" opacity="0.3"/>
+        <circle cx="90" cy="40" r="10" fill="#ec4899" opacity="0.3"/>
+    </g>
+    
+    <!-- 装饰曲线 -->
+    <path d="M50,300 C100,280 150,320 200,300 S300,280 350,300" fill="none" stroke="#ec4899" stroke-width="2" opacity="0.5"/>
+    <path d="M50,320 C100,300 150,340 200,320 S300,300 350,320" fill="none" stroke="#ec4899" stroke-width="2" opacity="0.3"/>
+</svg>

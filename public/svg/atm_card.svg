@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景渐变 -->
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#F0F0FF;stop-opacity:0.8" />
+            <stop offset="100%" style="stop-color:#FFE4E1;stop-opacity:0.8" />
+        </linearGradient>
+        <!-- 装饰性圆形渐变 -->
+        <radialGradient id="circleGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.1" />
+            <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+        </radialGradient>
+    </defs>
+    
+    <!-- 背景 -->
+    <rect width="900" height="1200" fill="url(#grad1)"/>
+    
+    <!-- 装饰圆形 -->
+    <circle cx="800" cy="200" r="300" fill="url(#circleGrad)"/>
+    <circle cx="100" cy="1000" r="200" fill="url(#circleGrad)"/>
+    
+    <!-- 内容容器 -->
+    <g transform="translate(100, 250)">
+        <!-- 标题：真相暴击 -->
+        <text x="0" y="0" font-family="阿里巴巴普惠体" font-size="84" font-weight="bold" fill="#FF8C69" opacity="0.9">
+            真相暴击
+        </text>
+        
+        <!-- 主要文本 -->
+        <text x="0" y="140" font-family="思源黑体CN" font-size="56" fill="#4A4A4A" line-height="1.6" filter="url(#glow)">
+            <tspan x="0" dy="0">银行ATM机多了，</tspan>
+            <tspan x="0" dy="80">柜员反而涨薪了！</tspan>
+            <tspan x="0" dy="80">为什么？</tspan>
+        </text>
+        
+        <!-- 解释文本 -->
+        <text x="0" y="420" font-family="思源黑体CN" font-size="48" fill="#8B4513" opacity="0.85" line-height="1.6">
+            <tspan x="0" dy="0">因为机器数钱，</tspan>
+            <tspan x="0" dy="70">人类专注教大爷大妈防诈骗啊！</tspan>
+        </text>
+    </g>
+    
+    <!-- 底部装饰线 -->
+    <!-- 添加文字发光效果 -->
+    <defs>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <path d="M100 900 L800 900" stroke="#4A4A4A" stroke-width="1" stroke-opacity="0.2"/>
+    
+    <!-- 添加装饰性元素 -->
+    <circle cx="850" cy="150" r="10" fill="#FF8C69" opacity="0.6"/>
+    <circle cx="50" cy="950" r="15" fill="#FFE4E1" opacity="0.4"/>
+    <circle cx="820" cy="180" r="5" fill="#4A4A4A" opacity="0.3"/>
+</svg>

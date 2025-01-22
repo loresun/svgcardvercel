@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font: bold 24px sans-serif; fill: #333; }
+        .subtitle { font: bold 18px sans-serif; fill: #444; }
+        .description { font: 14px sans-serif; fill: #666; }
+        .quadrant { stroke: #ddd; stroke-width: 2; }
+    </style>
+    
+    <!-- 标题 -->
+    <text x="400" y="50" text-anchor="middle" class="title">SWOT 战略分析矩阵</text>
+    
+    <!-- 内部因素（左侧标签） -->
+    <text x="150" y="200" text-anchor="middle" transform="rotate(-90,150,200)" class="subtitle">内部因素</text>
+    
+    <!-- 外部因素（右侧标签） -->
+    <text x="650" y="200" text-anchor="middle" transform="rotate(-90,650,200)" class="subtitle">外部因素</text>
+    
+    <!-- 积极因素（顶部标签） -->
+    <text x="400" y="120" text-anchor="middle" class="subtitle">积极因素</text>
+    
+    <!-- 消极因素（底部标签） -->
+    <text x="400" y="480" text-anchor="middle" class="subtitle">消极因素</text>
+    
+    <!-- 优势象限 -->
+    <rect x="200" y="150" width="250" height="150" class="quadrant" fill="#E3F2FD"/>
+    <text x="325" y="180" text-anchor="middle" class="subtitle">优势 (Strengths)</text>
+    <text x="325" y="210" text-anchor="middle" class="description">企业具备的核心竞争力</text>
+    <text x="325" y="230" text-anchor="middle" class="description">独特的资源和能力</text>
+    <text x="325" y="250" text-anchor="middle" class="description">市场领先地位</text>
+    
+    <!-- 劣势象限 -->
+    <rect x="200" y="300" width="250" height="150" class="quadrant" fill="#FCE7F3"/>
+    <text x="325" y="330" text-anchor="middle" class="subtitle">劣势 (Weaknesses)</text>
+    <text x="325" y="360" text-anchor="middle" class="description">需要改进的方面</text>
+    <text x="325" y="380" text-anchor="middle" class="description">资源和能力的不足</text>
+    <text x="325" y="400" text-anchor="middle" class="description">竞争劣势</text>
+    
+    <!-- 机会象限 -->
+    <rect x="450" y="150" width="250" height="150" class="quadrant" fill="#E8F5E9"/>
+    <text x="575" y="180" text-anchor="middle" class="subtitle">机会 (Opportunities)</text>
+    <text x="575" y="210" text-anchor="middle" class="description">市场发展机遇</text>
+    <text x="575" y="230" text-anchor="middle" class="description">新的商业模式</text>
+    <text x="575" y="250" text-anchor="middle" class="description">技术创新机会</text>
+    
+    <!-- 威胁象限 -->
+    <rect x="450" y="300" width="250" height="150" class="quadrant" fill="#FFF3E0"/>
+    <text x="575" y="330" text-anchor="middle" class="subtitle">威胁 (Threats)</text>
+    <text x="575" y="360" text-anchor="middle" class="description">市场竞争加剧</text>
+    <text x="575" y="380" text-anchor="middle" class="description">政策法规变化</text>
+    <text x="575" y="400" text-anchor="middle" class="description">技术更新换代</text>
+</svg>

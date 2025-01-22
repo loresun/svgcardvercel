@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480" height="760" viewBox="0 0 480 760" xmlns="http://www.w3.org/2000/svg">
+    <!-- 外边框 -->
+    <rect x="30" y="30" width="420" height="700" fill="none" stroke="#333" stroke-width="2"/>
+    
+    <!-- 标题区域 -->
+    <text x="240" y="80" font-family="KingHwa_OldSong, serif" font-size="24" text-anchor="middle" fill="#1a1a1a">可视化原则</text>
+    
+    <!-- 分隔线 -->
+    <line x1="60" y1="100" x2="420" y2="100" stroke="#333" stroke-width="1"/>
+    
+    <!-- 内容区域 -->
+    <g transform="translate(60, 150)">
+        <!-- 数据特征 -->
+        <text font-family="KingHwa_OldSong, serif" font-size="18" fill="#333">
+            <tspan x="0" y="0">数据特征 Data Characteristics</tspan>
+            <tspan x="20" y="30" font-size="14">转化WHAT为WHY，再决定HOW</tspan>
+        </text>
+        
+        <!-- 直观视觉 -->
+        <text font-family="KingHwa_OldSong, serif" font-size="18" fill="#333">
+            <tspan x="0" y="80">直观视觉 Intuitive Visual</tspan>
+            <tspan x="20" y="110" font-size="14">选择最大化洞察力和清晰度的视觉元素</tspan>
+        </text>
+        
+        <!-- 明确目的 -->
+        <text font-family="KingHwa_OldSong, serif" font-size="18" fill="#333">
+            <tspan x="0" y="160">明确目的 Clear Purpose</tspan>
+            <tspan x="20" y="190" font-size="14">构建具有组织层次的SVG结构</tspan>
+        </text>
+        
+        <!-- 视觉可及性 -->
+        <text font-family="KingHwa_OldSong, serif" font-size="18" fill="#333">
+            <tspan x="0" y="240">视觉可及性 Visual Accessibility</tspan>
+            <tspan x="20" y="270" font-size="14">确保数据表达的准确性</tspan>
+            <tspan x="20" y="300" font-size="14">同时保持普遍可读性</tspan>
+        </text>
+    </g>
+    
+    <!-- 装饰元素 -->
+    <path d="M60 400 L420 400" stroke="#ddd" stroke-width="1" stroke-dasharray="4 4"/>
+    <path d="M60 450 L420 450" stroke="#ddd" stroke-width="1" stroke-dasharray="4 4"/>
+    
+    <!-- 底部签名 -->
+    <text x="240" y="700" font-family="KingHwa_OldSong, serif" font-size="14" text-anchor="middle" fill="#666">Prompty by 李继刚</text>
+</svg>

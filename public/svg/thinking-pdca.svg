@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font: bold 24px sans-serif; fill: #333; }
+        .subtitle { font: bold 18px sans-serif; fill: #444; }
+        .description { font: 14px sans-serif; fill: #666; }
+        .circle { fill: none; stroke: #ddd; stroke-width: 2; }
+        .phase { fill: none; stroke-width: 2; }
+    </style>
+    
+    <!-- 标题 -->
+    <text x="400" y="50" text-anchor="middle" class="title">PDCA 持续改进循环</text>
+    
+    <!-- 大圆环 -->
+    <circle cx="400" cy="300" r="200" class="circle"/>
+    
+    <!-- Plan 阶段 -->
+    <path d="M400,300 L400,100 A200,200 0 0,1 600,300" class="phase" stroke="#4F46E5" fill="#E3F2FD"/>
+    <text x="500" y="180" text-anchor="middle" class="subtitle">计划 (Plan)</text>
+    <text x="500" y="200" text-anchor="middle" class="description">设定目标和行动方案</text>
+    
+    <!-- Do 阶段 -->
+    <path d="M400,300 L600,300 A200,200 0 0,1 400,500" class="phase" stroke="#10B981" fill="#E8F5E9"/>
+    <text x="550" y="350" text-anchor="middle" class="subtitle">执行 (Do)</text>
+    <text x="550" y="370" text-anchor="middle" class="description">实施计划和措施</text>
+    
+    <!-- Check 阶段 -->
+    <path d="M400,300 L400,500 A200,200 0 0,1 200,300" class="phase" stroke="#F59E0B" fill="#FFF3E0"/>
+    <text x="300" y="420" text-anchor="middle" class="subtitle">检查 (Check)</text>
+    <text x="300" y="440" text-anchor="middle" class="description">评估执行效果</text>
+    
+    <!-- Act 阶段 -->
+    <path d="M400,300 L200,300 A200,200 0 0,1 400,100" class="phase" stroke="#EC4899" fill="#FCE7F3"/>
+    <text x="250" y="180" text-anchor="middle" class="subtitle">改进 (Act)</text>
+    <text x="250" y="200" text-anchor="middle" class="description">总结经验并改进</text>
+    
+    <!-- 中心圆 -->
+    <circle cx="400" cy="300" r="50" fill="#fff" stroke="#ddd" stroke-width="2"/>
+    <text x="400" y="305" text-anchor="middle" class="subtitle">持续改进</text>
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="900" height="1200" fill="#F8FAFC"/>
+    
+    <!-- 标题 -->
+    <text x="450" y="100" font-family="Arial" font-size="48" fill="#1E293B" text-anchor="middle" font-weight="bold">游戏变现方式介绍</text>
+    
+    <!-- 步骤1 -->
+    <circle cx="200" cy="400" r="60" fill="#60A5FA"/>
+    <text x="200" y="410" font-family="Arial" font-size="32" fill="white" text-anchor="middle">1</text>
+    <text x="200" y="500" font-family="Arial" font-size="24" fill="#1E293B" text-anchor="middle">常规广告</text>
+    <text x="200" y="530" font-family="Arial" font-size="16" fill="#64748B" text-anchor="middle">游戏开始前和过程中的</text>
+    <text x="200" y="550" font-family="Arial" font-size="16" fill="#64748B" text-anchor="middle">前贴片和中插广告</text>
+    
+    <!-- 步骤1到步骤2的连接线 -->
+    <path d="M 260 400 L 390 400" stroke="#60A5FA" stroke-width="4" marker-end="url(#arrowhead)"/>
+    
+    <!-- 步骤2 -->
+    <circle cx="450" cy="400" r="60" fill="#3B82F6"/>
+    <text x="450" y="410" font-family="Arial" font-size="32" fill="white" text-anchor="middle">2</text>
+    <text x="450" y="500" font-family="Arial" font-size="24" fill="#1E293B" text-anchor="middle">激励广告</text>
+    <text x="450" y="530" font-family="Arial" font-size="16" fill="#64748B" text-anchor="middle">玩家主动观看广告</text>
+    <text x="450" y="550" font-family="Arial" font-size="16" fill="#64748B" text-anchor="middle">获得游戏奖励</text>
+    
+    <!-- 步骤2到步骤3的连接线 -->
+    <path d="M 510 400 L 640 400" stroke="#60A5FA" stroke-width="4" marker-end="url(#arrowhead)"/>
+    
+    <!-- 步骤3 -->
+    <circle cx="700" cy="400" r="60" fill="#2563EB"/>
+    <text x="700" y="410" font-family="Arial" font-size="32" fill="white" text-anchor="middle">3</text>
+    <text x="700" y="500" font-family="Arial" font-size="24" fill="#1E293B" text-anchor="middle">展示广告</text>
+    <text x="700" y="530" font-family="Arial" font-size="16" fill="#64748B" text-anchor="middle">静态图片广告</text>
+    <text x="700" y="550" font-family="Arial" font-size="16" fill="#64748B" text-anchor="middle">不中断游戏进程</text>
+    
+    <!-- 箭头标记定义 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#60A5FA"/>
+        </marker>
+    </defs>
+    
+    <!-- 底部提示信息 -->
+    <rect x="100" y="800" width="700" height="80" rx="10" fill="#FEE2E2"/>
+    <text x="450" y="850" font-family="Arial" font-size="18" fill="#991B1B" text-anchor="middle">请务必在收益报表工具中正确填写您的收款信息，完成入驻流程后即可开始获得收益。</text>
+</svg>

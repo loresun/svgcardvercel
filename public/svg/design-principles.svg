@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480" height="760" viewBox="0 0 480 760" xmlns="http://www.w3.org/2000/svg">
+    <!-- 外边框 -->
+    <rect x="30" y="30" width="420" height="700" fill="none" stroke="#333" stroke-width="2"/>
+    
+    <!-- 标题区域 -->
+    <text x="240" y="80" font-family="KingHwa_OldSong, serif" font-size="24" text-anchor="middle" fill="#1a1a1a">设计原则</text>
+    
+    <!-- 分隔线 -->
+    <line x1="60" y1="100" x2="420" y2="100" stroke="#333" stroke-width="1"/>
+    
+    <!-- 内容区域 -->
+    <g transform="translate(60, 150)">
+        <!-- 精确性 -->
+        <text font-family="KingHwa_OldSong, serif" font-size="18" fill="#333">
+            <tspan x="0" y="0">精确性 Precise</tspan>
+            <tspan x="0" y="30" font-size="14">追求细节的完美呈现</tspan>
+        </text>
+        
+        <!-- 系统性 -->
+        <text font-family="KingHwa_OldSong, serif" font-size="18" fill="#333">
+            <tspan x="0" y="80">系统性 Systematic</tspan>
+            <tspan x="0" y="110" font-size="14">构建有序的视觉层次</tspan>
+        </text>
+        
+        <!-- 平衡性 -->
+        <text font-family="KingHwa_OldSong, serif" font-size="18" fill="#333">
+            <tspan x="0" y="160">平衡性 Balanced</tspan>
+            <tspan x="0" y="190" font-size="14">保持视觉元素的和谐</tspan>
+        </text>
+        
+        <!-- 方法论 -->
+        <text font-family="KingHwa_OldSong, serif" font-size="18" fill="#333">
+            <tspan x="0" y="240">方法论 Methodical</tspan>
+            <tspan x="0" y="270" font-size="14">遵循系统化的设计流程</tspan>
+        </text>
+    </g>
+    
+    <!-- 装饰元素 -->
+    <g transform="translate(360, 150)">
+        <circle cx="0" cy="0" r="4" fill="#333"/>
+        <circle cx="0" cy="80" r="4" fill="#333"/>
+        <circle cx="0" cy="160" r="4" fill="#333"/>
+        <circle cx="0" cy="240" r="4" fill="#333"/>
+    </g>
+    
+    <!-- 底部签名 -->
+    <text x="240" y="700" font-family="KingHwa_OldSong, serif" font-size="14" text-anchor="middle" fill="#666">Prompty by 李继刚</text>
+</svg>

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <!-- 发光效果 -->
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- 渐变定义 -->
+    <linearGradient id="bgGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#748ffc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4c6ef5;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 箭头标记 -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4c6ef5"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="900" fill="url(#bgGradient2)"/>
+  
+  <!-- 装饰性六边形背景 -->
+  <pattern id="hexagons" width="50" height="43.4" patternUnits="userSpaceOnUse">
+    <path d="M25 0 L50 14.4 L50 28.8 L25 43.4 L0 28.8 L0 14.4 Z" 
+          fill="none" stroke="#dee2e6" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1200" height="900" fill="url(#hexagons)"/>
+
+  <!-- 主标题 -->
+  <g transform="translate(600,80)">
+    <rect x="-150" y="-40" width="300" height="80" rx="10" fill="#4c6ef5" opacity="0.1"/>
+    <text font-size="48" text-anchor="middle" font-family="Arial" fill="#4c6ef5" filter="url(#glow2)">
+      演绎推理
+    </text>
+  </g>
+
+  <!-- 主要内容 - 动态金字塔 -->
+  <g transform="translate(300,150)">
+    <!-- 顶部大三角形 -->
+    <g>
+      <path d="M300,100 L500,250 L100,250 Z" fill="url(#triangleGradient)" filter="url(#glow2)">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+      </path>
+      <text x="300" y="180" text-anchor="middle" fill="white" font-size="24">普遍原理</text>
+    </g>
+
+    <!-- 中间连接线 -->
+    <g>
+      <line x1="300" y1="250" x2="300" y2="350" stroke="#4c6ef5" stroke-width="3"
+            stroke-dasharray="10,5" marker-end="url(#arrowhead)">
+        <animate attributeName="stroke-dashoffset" from="0" to="15" dur="1s" repeatCount="indefinite"/>
+      </line>
+    </g>
+
+    <!-- 底部小三角形组 -->
+    <g>
+      <!-- 左三角形 -->
+      <path d="M200,400 L300,500 L100,500 Z" fill="url(#triangleGradient)">
+        <animate attributeName="transform" attributeType="XML"
+               values="translate(0,0); translate(0,-5); translate(0,0)"
+               dur="2s" repeatCount="indefinite"/>
+      </path>
+      <text x="200" y="470" text-anchor="middle" fill="white" font-size="18">具体结论1</text>
+
+      <!-- 右三角形 -->
+      <path d="M400,400 L500,500 L300,500 Z" fill="url(#triangleGradient)">
+        <animate attributeName="transform" attributeType="XML"
+               values="translate(0,0); translate(0,-5); translate(0,0)"
+               dur="2s" repeatCount="indefinite" begin="1s"/>
+      </path>
+      <text x="400" y="470" text-anchor="middle" fill="white" font-size="18">具体结论2</text>
+    </g>
+
+    <!-- 装饰性连接线 -->
+    <g stroke="#4c6ef5" stroke-width="1" opacity="0.5">
+      <path d="M100,250 Q300,300 500,250" fill="none"/>
+      <path d="M100,500 Q300,550 500,500" fill="none"/>
+    </g>
+  </g>
+
+  <!-- 说明文字区域 -->
+  <g transform="translate(600,700)">
+    <rect x="-250" y="-30" width="500" height="60" rx="10" fill="#4c6ef5" opacity="0.1"/>
+    <text text-anchor="middle" font-size="24" fill="#495057">
+      从一般原理推导出具体结论的思维过程
+    </text>
+  </g>
+
+  <!-- 装饰性粒子 -->
+  <g>
+    <circle cx="100" cy="100" r="3" fill="#4c6ef5">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="800" r="3" fill="#4c6ef5">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+  </g>
+</svg>

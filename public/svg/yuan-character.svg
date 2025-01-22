@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480" height="760" viewBox="0 0 480 760" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="paperTexture" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#f5f5f5;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#f0f0f0;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#e8e8e8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="paperGrain">
+            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise" />
+            <feColorMatrix type="saturate" values="0" />
+            <feBlend in="SourceGraphic" in2="noise" mode="multiply" />
+        </filter>
+    </defs>
+    
+    <!-- 背景 -->
+    <rect width="480" height="760" fill="url(#paperTexture)" filter="url(#paperGrain)" />
+    
+    <!-- 标题 -->
+    <text x="240" y="80" text-anchor="middle" font-family="KingHwa_OldSong, 'Noto Serif SC'" font-size="28" fill="#333">
+        一字之诗
+    </text>
+    
+    <!-- 分隔线 -->
+    <line x1="120" y1="100" x2="360" y2="100" stroke="#666" stroke-width="1" />
+    
+    <!-- 主字 -->
+    <text x="240" y="300" text-anchor="middle" font-family="KingHwa_OldSong, 'Noto Serif SC'" font-size="180" fill="#000">
+        元
+    </text>
+    
+    <!-- 水墨效果装饰 -->
+    <circle cx="240" cy="300" r="120" fill="none" stroke="#333" stroke-width="2" opacity="0.1" />
+    <path d="M180,250 Q240,200 300,250" fill="none" stroke="#333" stroke-width="2" opacity="0.1" />
+    
+    <!-- 诗句 -->
+    <text x="240" y="500" text-anchor="middle" font-family="KingHwa_OldSong, 'Noto Serif SC'" font-size="24" fill="#333">
+        万物之始，一即是全
+    </text>
+    <text x="240" y="540" text-anchor="middle" font-family="KingHwa_OldSong, 'Noto Serif SC'" font-size="24" fill="#333">
+        源头活水，生生不息
+    </text>
+    
+    <!-- 落款 -->
+    <text x="380" y="680" text-anchor="end" font-family="KingHwa_OldSong, 'Noto Serif SC'" font-size="16" fill="#666">
+        炼字师
+    </text>
+</svg>

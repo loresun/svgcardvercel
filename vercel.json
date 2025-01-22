@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@vercel/next" }
+  ],
+  "routes": [
+    { "src": "/svg/(.*)", "dest": "/public/svg/$1" },
+    { "src": "/config/(.*)", "dest": "/public/config/$1" }
+  ]
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="600" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 标题 -->
+    <text x="500" y="50" text-anchor="middle" font-size="24" fill="#8B5CF6" font-family="PingFang SC, Microsoft YaHei">IP影响力增长曲线</text>
+    
+    <!-- IP工作内容区块 -->
+    <g transform="translate(50, 80)">
+        <!-- 第一阶段 -->
+        <rect x="0" y="0" width="280" height="120" rx="8" fill="#FFF7ED" />
+        <text x="20" y="30" font-size="16" fill="#333">IP工作内容：</text>
+        <text x="40" y="60" font-size="14" fill="#666">• 确定个人定位和人设</text>
+        <text x="40" y="85" font-size="14" fill="#666">• 创作原创内容</text>
+        <text x="40" y="110" font-size="14" fill="#666">• 与粉丝建立初步互动</text>
+
+        <!-- 第二阶段 -->
+        <rect x="320" y="0" width="280" height="120" rx="8" fill="#FFF7ED" />
+        <text x="340" y="30" font-size="16" fill="#333">IP工作内容：</text>
+        <text x="360" y="60" font-size="14" fill="#666">• 提高内容质量和产出频率</text>
+        <text x="360" y="85" font-size="14" fill="#666">• 扩大粉丝群体，增强互动</text>
+        <text x="360" y="110" font-size="14" fill="#666">• 开始探索商业变现模式</text>
+
+        <!-- 第三阶段 -->
+        <rect x="640" y="0" width="280" height="120" rx="8" fill="#FFF7ED" />
+        <text x="660" y="30" font-size="16" fill="#333">IP工作内容：</text>
+        <text x="680" y="60" font-size="14" fill="#666">• 建立个人品牌和IP矩阵</text>
+        <text x="680" y="85" font-size="14" fill="#666">• 深度商业合作和变现</text>
+        <text x="680" y="110" font-size="14" fill="#666">• 培养团队，实现规模化运营</text>
+    </g>
+
+    <!-- 关键任务区块 -->
+    <g transform="translate(50, 240)">
+        <!-- 第一阶段 -->
+        <rect x="0" y="0" width="280" height="140" rx="8" fill="#ECFDF5" />
+        <text x="20" y="30" font-size="16" fill="#333">IP助理关键任务：</text>
+        <text x="40" y="60" font-size="14" fill="#666">• 协助IP定位与人设打造</text>
+        <text x="40" y="85" font-size="14" fill="#666">• 参与内容创作和账号搭建</text>
+        <text x="40" y="110" font-size="14" fill="#666">• 执行基础粉丝互动策略</text>
+        <text x="40" y="135" font-size="14" fill="#666">• 学习行业知识和术语</text>
+
+        <!-- 第二阶段 -->
+        <rect x="320" y="0" width="280" height="140" rx="8" fill="#EFF6FF" />
+        <text x="340" y="30" font-size="16" fill="#333">IP运营关键任务：</text>
+        <text x="360" y="60" font-size="14" fill="#666">• 制定内容策略和计划</text>
+        <text x="360" y="85" font-size="14" fill="#666">• 管理多平台内容分发</text>
+        <text x="360" y="110" font-size="14" fill="#666">• 深化粉丝运营，建立社群</text>
+        <text x="360" y="135" font-size="14" fill="#666">• 开展初步商业合作</text>
+
+        <!-- 第三阶段 -->
+        <rect x="640" y="0" width="280" height="140" rx="8" fill="#FEF3C7" />
+        <text x="660" y="30" font-size="16" fill="#333">IP操盘手关键任务：</text>
+        <text x="680" y="60" font-size="14" fill="#666">• 制定IP整体发展战略</text>
+        <text x="680" y="85" font-size="14" fill="#666">• 管理团队，协调各方资源</text>
+        <text x="680" y="110" font-size="14" fill="#666">• 负责重要商业决策</text>
+        <text x="680" y="135" font-size="14" fill="#666">• 品牌化运作和危机管理</text>
+    </g>
+
+    <!-- 所需技能区块 -->
+    <g transform="translate(50, 420)">
+        <!-- 第一阶段 -->
+        <rect x="0" y="0" width="280" height="120" rx="8" fill="#ECFDF5" />
+        <text x="20" y="30" font-size="16" fill="#333">IP助理所需技能：</text>
+        <text x="40" y="60" font-size="14" fill="#666">• 基础内容创作能力</text>
+        <text x="40" y="85" font-size="14" fill="#666">• 熟悉主流社交平台操作</text>
+        <text x="40" y="110" font-size="14" fill="#666">• 良好的执行力和学习能力</text>
+
+        <!-- 第二阶段 -->
+        <rect x="320" y="0" width="280" height="120" rx="8" fill="#EFF6FF" />
+        <text x="340" y="30" font-size="16" fill="#333">IP运营所需技能：</text>
+        <text x="360" y="60" font-size="14" fill="#666">• 内容策划和制作能力</text>
+        <text x="360" y="85" font-size="14" fill="#666">• 数据分析和洞察能力</text>
+        <text x="360" y="110" font-size="14" fill="#666">• 项目管理能力</text>
+
+        <!-- 第三阶段 -->
+        <rect x="640" y="0" width="280" height="120" rx="8" fill="#FEF3C7" />
+        <text x="660" y="30" font-size="16" fill="#333">IP操盘手所需技能：</text>
+        <text x="680" y="60" font-size="14" fill="#666">• 强大的商业思维</text>
+        <text x="680" y="85" font-size="14" fill="#666">• 领导力和团队管理能力</text>
+        <text x="680" y="110" font-size="14" fill="#666">• 高级谈判能力</text>
+    </g>
+
+    <!-- 阶段标题 -->
+    <g transform="translate(50, 560)">
+        <text x="140" y="0" text-anchor="middle" font-size="16" fill="#333">0-1阶段：IP孵化期</text>
+        <text x="460" y="0" text-anchor="middle" font-size="16" fill="#333">1-10阶段：IP成长期</text>
+        <text x="780" y="0" text-anchor="middle" font-size="16" fill="#333">10-100阶段：IP规模化运营期</text>
+    </g>
+
+    <!-- 阶段小标题 -->
+    <g transform="translate(50, 580)">
+        <text x="140" y="0" text-anchor="middle" font-size="14" fill="#666">IP助理（入门级）</text>
+        <text x="460" y="0" text-anchor="middle" font-size="14" fill="#666">IP运营（进阶级）</text>
+        <text x="780" y="0" text-anchor="middle" font-size="14" fill="#666">IP操盘手（专家级）</text>
+    </g>
+
+    <!-- 增长曲线 -->
+    <path d="M50,540 Q460,400 950,200" fill="none" stroke="#8B5CF6" stroke-width="3" />
+
+    <!-- 阶段标记点 -->
+    <circle cx="140" y="480" r="6" fill="#22C55E" />
+    <circle cx="460" y="340" r="6" fill="#3B82F6" />
+    <circle cx="780" y="240" r="6" fill="#F59E0B" />
+</svg>
