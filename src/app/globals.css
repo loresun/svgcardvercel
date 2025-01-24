@@ -88,6 +88,8 @@ body {
   overflow: auto;
   transform: scale(0.7);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal.active .modal-content {
@@ -96,7 +98,7 @@ body {
 
 .download-btn {
   display: block;
-  margin: 20px auto 0;
+  margin: 10px auto;
   padding: 10px 20px;
   background: #8b5cf6;
   color: white;
@@ -211,4 +213,18 @@ body {
   right: 10px;
   font-size: 24px;
   cursor: pointer;
+}
+
+.modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }

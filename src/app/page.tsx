@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface Group {
   id: string;
@@ -16,6 +17,8 @@ export default function Home() {
   const [modalActive, setModalActive] = useState(false);
   const [currentImage, setCurrentImage] = useState('');
   const [groups, setGroups] = useState<Group[]>([]);
+  const [svgCode, setSvgCode] = useState('');
+  const modalContentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     loadGroups();
@@ -35,9 +38,6 @@ export default function Home() {
   async function loadSVGFiles() {
     try {
       const response = await fetch('/api/list-svg');
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
       const files = await response.json();
       setAllFiles(files);
     } catch (error) {
@@ -45,22 +45,17 @@ export default function Home() {
     }
   }
 
-  function getFileTimestamp(filename: string) {
-    const match = filename.match(/\d{8}/);
-    return match ? match[0] : '00000000';
-  }
-
   function filterCards() {
-    const currentGroupData = groups.find(group => group.id === currentGroup);
-    if (!currentGroupData) return [];
-
-    const regex = new RegExp(currentGroupData.pattern);
+    const regex = new RegExp(groups.find(group => group.id === currentGroup)?.pattern || '.*');
     const filteredFiles = allFiles.filter(file => regex.test(file));
-    
+
     if (currentSortMode === 'time') {
-      filteredFiles.sort((a, b) => getFileTimestamp(b).localeCompare(getFileTimestamp(a)));
+      filteredFiles.sort((a, b) => {
+        const aTime = new Date(a.match(/(\d{4}-\d{2}-\d{2})/)?.[0] || '1970-01-01').getTime();
+        const bTime = new Date(b.match(/(\d{4}-\d{2}-\d{2})/)?.[0] || '1970-01-01').getTime();
+        return bTime - aTime;
+      });
     }
-    
     return filteredFiles;
   }
 
@@ -89,6 +84,40 @@ export default function Home() {
       console.error('Error downloading PNG:', error);
     }
   }
+
+  async function fetchSvgCode(svgUrl: string) {
+    try {
+      const response = await fetch(svgUrl);
+      const code = await response.text();
+      setSvgCode(code);
+    } catch (error) {
+      console.error('Error fetching SVG code:', error);
+      setSvgCode('Failed to load SVG code.');
+    }
+  }
+
+  const handleCardClick = async (file: string) => {
+    const svgUrl = `/svg/${file}`;
+    setCurrentImage(svgUrl);
+    await fetchSvgCode(svgUrl);
+    setModalActive(true);
+  };
+
+  const handleDownloadSVG = () => {
+    if (!currentImage) return;
+    const link = document.createElement('a');
+    link.href = currentImage;
+    link.download = currentImage.split('/').pop() || 'card.svg';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handleCopySVG = () => {
+    if (!svgCode) return;
+    navigator.clipboard.writeText(svgCode);
+    alert('SVG code copied to clipboard!');
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 flex">
@@ -120,11 +149,8 @@ export default function Home() {
         </div>
         <div className="card-container">
           {filterCards().map((file, index) => (
-            <div key={index} className="card" onClick={() => {
-              setCurrentImage(`/svg/${file}`);
-              setModalActive(true);
-            }}>
-              <img src={`/svg/${file}`} alt={file} />
+            <div key={index} className="card" onClick={() => handleCardClick(file)}>
+              <Image src={`/svg/${file}`} alt={file} width={150} height={200}  />
               <div className="card-name">{file}</div>
             </div>
           ))}
@@ -134,10 +160,16 @@ export default function Home() {
         <div className="modal active" onClick={(e) => {
           if (e.target === e.currentTarget) setModalActive(false);
         }}>
-          <div className="modal-content">
+          <div className="modal-content" ref={modalContentRef}>
             <span className="modal-close" onClick={() => setModalActive(false)}>&times;</span>
-            <img src={currentImage} alt="放大预览" />
-            <button className="download-btn" onClick={() => downloadAsPNG(currentImage)}>下载 PNG</button>
+            <div className="modal-image-container">
+              <Image src={currentImage} alt="放大预览" width={600} height={800} />
+            </div>
+            <div className="modal-actions">
+              <button className="download-btn" onClick={() => downloadAsPNG(currentImage)}>下载 PNG</button>
+              <button className="download-btn" onClick={handleDownloadSVG}>下载 SVG</button>
+              <button className="download-btn" onClick={handleCopySVG}>复制 SVG 代码</button>
+            </div>
           </div>
         </div>
       )}
